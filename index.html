@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th> Amount </th>
+            <td></td>
+            <th> Form Currency </th>
+            <td></td>
+            <th> To Currency </th>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" min="0" id="amount">
+            </td>
+            <td class="pd-r-50"></td>
+            <td>
+                <select name="form_currency" id="form_cr" style="width: 120%;">
+                    <option value="1"> Viet Nam</option>
+                    <option value="2"> Usa</option>
+                </select>
+            </td>
+            <td class="pd-r-50"></td>
+
+            <td>
+                <select name="to_currency" id="to_cr" style="width: 100%;">
+                    <option value="1"> VND </option>
+                    <option value="2"> USD </option>
+                </select>
+            </td>
+            <td>
+                <button onclick="tranferCurrency()" class="btn-click"> Convert </button>
+            </td>
+        </tr>
+        <tr>
+            <td><div id="result" style="color: blue;"></div></td>
+        </tr>
+    </table>
+</body>
+</htmL> 
+<script language="javascript" src="index.js"></script>
